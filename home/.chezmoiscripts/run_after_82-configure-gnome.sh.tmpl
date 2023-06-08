@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# {{ template "scripts-library" }}
+
+# The following line is for ShellCheck to correctly identify the above included library
+true || source ../.chezmoitemplates/scripts-library
+
+gsettings_ensure org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font Mono 13'
+gsettings_ensure org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
+gsettings_ensure org.gnome.desktop.interface icon-theme 'Yaru-blue'
+
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings_ensure org.gnome.shell.extensions.dash-to-dock show-mounts-only-mounted true

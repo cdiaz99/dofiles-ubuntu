@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# `shell_env.sh` is a main file for any general-case utils.
+#
+# This file is used as a source file for zsh.
+
+# === Shell parts ===
+if [[ -f "$HOME/.shell/aliases" ]]; then
+  source "$HOME/.shell/aliases"
+fi
+
+# === Local variables and overrides ===
+
+if [[ -f "$HOME/.shell-env-local" ]]; then
+  source "$HOME/.shell-env-local"
+fi
