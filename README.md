@@ -1,4 +1,4 @@
-Jorge Rodríguez Pedrianes' dotfiles
+Carlos Díaz Calzadilla' dotfiles
 ===================================
 
 Personal dotfiles to configure Ubuntu on a Slimbook laptop.
